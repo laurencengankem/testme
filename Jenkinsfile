@@ -4,13 +4,7 @@ pipeline {
   
   stages {
   
-     stage("checkout") {
-    
-      steps {
-        echo "checking out to the branch"
-      }
-    
-    }
+ 
     
     stage("build") {
     
