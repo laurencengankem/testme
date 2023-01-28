@@ -4,12 +4,14 @@ pipeline {
   
   stages {
   
- 
+    tools {
+      maven 'maven-3.8.6' 
+    }
     
     stage("build") {
     
       steps {
-        echo "building out to the branch"
+        sh "mvn clean install"
       }
     
     }
